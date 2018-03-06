@@ -1,0 +1,93 @@
+/* Página de las butacas */
+
+.encabezado {
+    text-align: center;
+}
+
+.noSelected {
+    /*fill:black; Mirar lo del color black. Quitamos el blanco del html stático*/
+}
+
+.selected {
+    fill:#00FF00 !important;
+}
+
+.chosen {
+    fill:red !important;
+}
+
+#buyProcess {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+    border:1px solid black;
+}
+
+#buyProcess > div {
+    flex:1;
+    text-align: center;
+    border:1px solid black;
+}
+
+.butaca {
+    width:100%;
+}
+
+#botonReserva {
+    cursor:pointer;
+    font-size: 1.5em;
+    border:none;
+    border-radius:5px;
+    margin:0 auto;
+    
+    padding:10px;
+    background: lightgrey;
+}
+
+#botonReserva:hover {
+    background: gold;
+    box-shadow: 0 0 30px Yellow;
+    transition:all 0.7s ease;
+}
+
+#leyenda {
+    border:1px solid black;
+    padding:10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.estados-butacas {
+    border:1px solid white;
+    padding:10px;
+}
+
+#botonesButacas {
+    text-align:center
+}
+
+#Emergencyexit {
+    cursor: pointer;
+    text-align: left ;
+}
+
+#EnterArrow {
+    cursor: pointer;
+    text-align: right ;
+}
+
+@media (max-width:360px) {
+    #datosFormulario {
+        margin:0 auto;
+        margin-top:5%;
+    }
+    #img-pelicula {
+        width:100%;
+    }
+    footer {
+        margin-left:0;
+        margin-right:0% !important;
+        margin-left:0% !important;
+    }
+}

@@ -1,0 +1,188 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background:darkred;
+}
+
+header {
+    border:2px solid white;
+    border-radius:3px ;
+    margin:0 auto;
+    background: black;
+    padding:7px;
+    display:flex;
+    color:white;
+}
+
+#carteleraText {
+    font-size: 2.5em;
+    text-align: center;
+    color:white;
+}
+
+#NombrePagina {
+    position: relative;
+    top:17px;
+    font-size: 2em;
+}
+
+#peliculas {
+    /* border:1px solid black; */
+    background-color: white;
+
+    margin-top:2%;
+    margin-right:10%;
+    margin-left:10%; 
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:10px;
+}
+
+.titulos {
+    text-decoration:none !important;
+    color:Black;
+}
+
+.titulo {
+    font-size: 1.5em;
+}
+
+.initialImages {
+    border:5px solid white;
+    width:12em;
+    height:12em;
+}
+
+.initialImages:hover {
+    cursor: pointer;
+    /* border:2px solid darkred; */
+    box-shadow: 0 0 30px gold;
+    width:15em;
+    height:15em;
+}
+
+footer {
+    /* border:1px solid Black; */
+    border-top:1px solid black;
+    background:white;
+    margin:0 auto;
+    padding:5px;
+
+    margin-right:10%;
+    margin-left:10%; 
+}
+
+/* Archivo de los datos de la película */
+
+#datosPelicula {
+    border:1px solid white;
+    background:white;
+    
+    /* display:flex;
+    flex-direction: column;
+    justify-content: space-around; */
+   
+    margin-top:2%;
+    margin-right:10%;
+    margin-left:10%; 
+    
+    padding:18px;
+    height:90%;
+}
+
+#tituloSeleccionado {
+    font-size: 3em;
+}
+
+#portadaSeleccionada {
+    cursor:pointer;
+    border:2px solid Black;
+    width:18em;
+    height:18em;
+}
+
+#portadaSeleccionada:hover {
+    width:25em;
+    height:25em;
+}
+
+#sinopsisSeleccionada {
+    display:flex;
+    align-content: right;
+    font-size: 1.5em;
+}
+
+.botonesHorario {
+    font-size: 1.5em;
+    margin-left:3%;
+    cursor:pointer;
+    border:none;
+    border-radius: 7px;
+    padding:19px;
+    /* width:7em;
+    height:5em; */
+}
+
+.botonesHorario:hover {
+    background: gold;
+    box-shadow: 0 0 30px Yellow;
+    transition: all 0.7s ease;
+}
+
+button  {
+    background: #B9B9B9;
+}
+
+input[type=button] {
+    background: #B9B9B9;
+}
+
+@media (max-width:455px) {
+    #NombrePagina {
+        position: relative;;
+        top:1px;
+    }
+    #datosPelicula {
+        text-align: center;
+        margin-left:0;
+        margin-right:0;
+    }
+    #portadaSeleccionada {
+        width:12em;
+        height:12em;
+    }
+    #portadaSeleccionada:hover { 
+        width:14em;
+        height:14em;
+    }
+    footer {
+       margin:0 auto !important;
+    }
+    #ftinicio {
+        margin-left:10% !important;
+        margin-right:10% !important;
+    }
+}
+
+@media (max-width:920px) {
+    #Pantalla {
+        width:100%;
+    }
+    .butaca {
+        width:100%;
+        height:300%;
+    }
+    #leyenda {
+        display: flex;
+        flex-direction: row;
+    }
+    .estados-butacas {
+        width:29%;
+    }
+    button {
+        width:45%;
+    }
+}

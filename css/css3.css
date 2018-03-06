@@ -1,0 +1,119 @@
+/* CSS Formulario */ 
+body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background:darkred
+}
+
+header {
+    border:2px solid white;
+    background: black; 
+    color:white;
+    border-radius:3px ;
+    margin:1 auto; 
+    margin-top:8px;
+    margin-left:7px;
+    margin-right:7px;
+    padding:7px;
+    display: flex !important;
+    font-size: 1.1em;
+}
+
+#NombrePagina {
+    font-size: 1.9em;
+    position: relative !important;
+    top:15px;
+}
+
+#datosFormulario {
+    border:1px solid white;
+    background:white;
+   
+    margin-top:2%;
+    margin-right:10%;
+    margin-left:10%; 
+    
+    padding:3px;
+}
+
+#buyProcess2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:1em;
+    margin-right:1em;
+    margin-top:1em;
+    border:1px solid black;
+}
+
+#buyProcess2 > div {
+    flex:1;
+    text-align: center;
+    border:1px solid black;
+    padding:10px;
+}
+
+#q {
+    border:1px solid black;
+    margin-right:10%;
+    margin-left:10%;
+    font-size: 1.5em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 19px;
+    box-shadow: 5px 9px 3px #737272;
+}
+
+#datosPelicula {
+    text-align: center;
+}
+
+.dataFilm {
+    display: flex;
+    flex-direction: column;
+    transform:scale(0.8, 0.7);
+}
+
+#img-pelicula {
+    width:10em;
+    height:12em;
+}
+
+/* .input-field input[type=text]:focus {
+    border-bottom:5px solid Gold !important;
+    box-shadow: 0 5px 0 0 Gold;
+}
+
+.input-field input[type=number]:focus {
+    border-bottom:3px solid Gold !important;
+} */
+
+#enviar:hover {
+    box-shadow: 0 0 19px teal ;
+    transition:all 0.7s ease;
+}
+
+footer {
+    background: white;
+    padding:5px;
+}
+
+.input-field input[type=text]:invalid, .input-field input[type=email]:invalid, .input-field input[type=number]:invalid {
+    color: #A90000;
+}
+
+@media (max-width:445px) {
+    #datosFormulario {
+        margin:8px;
+        margin-top:5%;
+    }
+    #img-pelicula {
+        width:100%;
+    }
+    footer {
+        margin-top:1% !important;
+        margin-right:2.5% !important;
+        margin-left:2.5% !important;
+        margin-bottom:2% !important;
+    }
+}
